@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "GraphQL Server Application (amarjin6)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gen-types": "graphql-codegen --config codegen.yml",
+    "codegen": "graphql-codegen --config src/codegen.ts"
+  },
+  "author": "Alexander Marjin",
+  "license": "ISC",
+  "dependencies": {
+    "@graphql-codegen/cli": "^3.3.0",
+    "apollo-server-express": "^3.12.0",
+    "express": "^4.18.2",
+    "graphql": "^16.6.0",
+    "typescript": "^5.0.4",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "3.3.0",
+    "@graphql-codegen/typescript": "3.0.3",
+    "@graphql-codegen/typescript-resolvers": "3.2.0"
+  }
+}
